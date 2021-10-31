@@ -68,4 +68,19 @@ vagrant box remove laravel/homestead --box-version=0.1.7
 
 編輯Vagrantfile
 可設定預先執行shell安裝什麼東西
-memory GB
+memory幾GB
+
+
+
+
+離線下載win10-edge.box
+
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+
+```
+vagrant box add windows/win10-edge 'MSEdge - Win10.box'
+vagrant init windows/win10-edge
+vagrant up
+```
+
+username: IEUser password: Passw0rd!
