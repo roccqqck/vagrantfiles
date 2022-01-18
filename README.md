@@ -86,3 +86,18 @@ vagrant up
 ```
 
 username: IEUser password: Passw0rd!
+
+
+
+
+## Resize disksize
+```
+vagrant plugin install vagrant-disksize
+```
+and use the following in your Vagrantfile:
+```
+vagrant.configure('2') do |config|
+    config.vm.box = 'ubuntu/focal64'
+    config.disksize.size = '512GB'
+end
+```
