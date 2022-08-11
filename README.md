@@ -101,3 +101,11 @@ vagrant.configure('2') do |config|
     config.disksize.size = '512GB'
 end
 ```
+
+
+
+## Private IP
+Virtualbox default CIDR Ranges: 192.168.56.0/21
+```
+config.vm.network "private_network", ip: "192.168.56.11"
+```
